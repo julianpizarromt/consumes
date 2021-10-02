@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Costumes</title>
+</head>
+<body>
+    <div id="mensaje">
+
+    </div>
+    <h1>Menu costumes</h1>
+    <ul>
+        <li><button onclick="listarCostumes()">Listar Costumes</button></li>
+        <li><button onclick="crearCostumes()">Crear Costumes</button></li>
+    </ul>
+
+    <div id="listado">
+
+    </div>
+
+    <div id="cform" style="">
+        <h2>Ingrese los datos del costumes</h2>
+        <label>NAME</label>
+        <input type="text" name="name" id="name"><br>
+        <label>BRAND</label>
+        <input type="text" name="brand" id="brand"><br>
+        <label>MODEL</label>
+        <input type="number" name="model" id="model"><br>
+        <label>CATEGORY_ID</label>
+        <input type="number" name="model" id="category"><br>
+        <button onclick="registrarCostumes();">Registrar costumes</button>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/misfunciones.js"></script>
+</body>
+</html>
