@@ -17,7 +17,7 @@ function pintarListadoCostumes(items){
                         <th>NAME</th>
                         <th>BRAND</th>
                         <th>MODEL</th>
-                        <th>Acción</th>
+                        <th>Acción </th>
                      </tr>`;
 
     for(i=0;i<items.length; i++){
