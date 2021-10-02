@@ -47,8 +47,8 @@ function registrarCostumes(){
         type:"POST",
         data: dataToSend,
         contentType:"application/JSON",
-        dataType:'json',
-        complete:function(respuesta){
+        //dataType:'json',
+        success:function(respuesta){
             console.log(respuesta);
             $("#mensaje").show(1000);
             $("#mensaje").html("costumes guardado!");
@@ -61,6 +61,10 @@ function registrarCostumes(){
             $("#mensaje").hide(1000);
             $("#mensaje").empty();
 
+        },error: function (xhr, status) {
+            $("#mensajes").show(1000);
+            $("#mensajes").html("Error peticion POST... " + status );
+            //$("#mensajes").hide(1000);
         }
     });
 }
